@@ -53,7 +53,7 @@ Whether you must use bracket notation in order to access this input as a propert
 ```js
 obj.bracketFree = true; //use the supreme dot notation
 obj['requires-brackets'] = true; //string must be inside brackets to be used as property
-
+```
 
 ### es3Warning
 
