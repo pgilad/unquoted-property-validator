@@ -1,9 +1,9 @@
-# valid-literal
+# unquoted-property-validator
 > Unquoted JavaScript property name validator
 
-[![NPM Version](http://img.shields.io/npm/v/valid-literal.svg?style=flat)](https://npmjs.org/package/valid-literal)
-[![NPM Downloads](http://img.shields.io/npm/dm/valid-literal.svg?style=flat)](https://npmjs.org/package/valid-literal)
-[![Build Status](http://img.shields.io/travis/pgilad/valid-literal.svg?style=flat)](https://travis-ci.org/pgilad/valid-literal)
+[![NPM Version](http://img.shields.io/npm/v/unquoted-property-validator.svg?style=flat)](https://npmjs.org/package/unquoted-property-validator)
+[![NPM Downloads](http://img.shields.io/npm/dm/unquoted-property-validator.svg?style=flat)](https://npmjs.org/package/unquoted-property-validator)
+[![Build Status](http://img.shields.io/travis/pgilad/unquoted-property-validator.svg?style=flat)](https://travis-ci.org/pgilad/unquoted-property-validator)
 
 This module checks if a given property name can be used without quotes and/or with dot notation.
 
@@ -13,15 +13,15 @@ So this is a **node-port** of his [website implementation](https://github.com/ma
 ## Installation
 
 ```bash
-$ npm install valid-literal --save
+$ npm install unquoted-property-validator --save
 ```
 
 ## Usage
 
 ```js
-var validLiteral = require('valid-literal');
+var unquotedValidator = require('unquoted-property-validator');
 
-var results = validLiteral('myCoolLiteral');
+var results = unquotedValidator('myCoolLiteral');
 console.log(results);
 /* {
     needsQuotes: false,
@@ -72,7 +72,7 @@ Your quoted string in case there are problematic characters.
 
 ## API
 
-`validLiteral(input)`
+`unquotedValidator(input)`
 
 ### input
 

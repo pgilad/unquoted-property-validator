@@ -1,1 +1,1 @@
-module.exports = require('./lib/valid-literal');
+module.exports = require('./lib/unquoted-property-validator');
