@@ -1,15 +1,14 @@
 # valid-literal
-> Check if input is a valid javascript string literal or needs quoting
+> Unquoted JavaScript property name validator
 
 [![NPM Version](http://img.shields.io/npm/v/valid-literal.svg?style=flat)](https://npmjs.org/package/valid-literal)
 [![NPM Downloads](http://img.shields.io/npm/dm/valid-literal.svg?style=flat)](https://npmjs.org/package/valid-literal)
 [![Build Status](http://img.shields.io/travis/pgilad/valid-literal.svg?style=flat)](https://travis-ci.org/pgilad/valid-literal)
 
-I wanted a module to verify if a string is a valid literal,
- and I ran into Mathias Bynens brilliant [article](https://mathiasbynens.be/notes/javascript-properties).
-And even more - brilliant [website implementation](https://github.com/mathiasbynens/mothereff.in/tree/master/js-properties).
+This module checks if a given property name can be used without quotes and/or with dot notation.
 
-So I **literally** copied his validator, made it more node like and added some tests.
+It is based on Mathias Bynens brilliant [javascript-properties article](https://mathiasbynens.be/notes/javascript-properties).
+So this is a **node-port** of his [website implementation](https://github.com/mathiasbynens/mothereff.in/tree/master/js-properties).
 
 ## Installation
 
@@ -35,11 +34,12 @@ console.log(results);
 
 ## Results
 
-Your string input will be checked and you will get 3 flags as output:
+Your property input will be checked and you will get 3 flags as output:
 
 ### needsQuotes
 
-Whether you must quote your input in order to use it in an object literal:
+Quotes can only be omitted if the property name is a numeric literal or a valid identifier name:
+
 ```js
 var obj = {
         nonQuoted: true,
@@ -49,7 +49,8 @@ var obj = {
 
 ### needsBrackets
 
-Whether you must use bracket notation in order to access this input as a property:
+Dot notation can only be used when the property name is a valid identifier name:
+
 ```js
 obj.bracketFree = true; //use the supreme dot notation
 obj['requires-brackets'] = true; //string must be inside brackets to be used as property
@@ -77,7 +78,7 @@ Your quoted string in case there are problematic characters.
 
 Type: `String`
 
-String to validate
+Property to validate
 
 ## License
 Copyright © 2014 Gilad Peleg.

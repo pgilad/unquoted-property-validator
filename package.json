@@ -1,7 +1,7 @@
 {
   "name": "valid-literal",
   "version": "0.1.1",
-  "description": "Check if input is a valid javascript string literal",
+  "description": "Unquoted JavaScript property name validator",
   "homepage": "https://github.com/pgilad/valid-literal",
   "bugs": "https://github.com/pgilad/valid-literal/issues",
   "main": "index.js",
