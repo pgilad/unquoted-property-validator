@@ -1,6 +1,6 @@
 {
   "name": "unquoted-property-validator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unquoted JavaScript property name validator",
   "homepage": "https://github.com/pgilad/unquoted-property-validator",
   "bugs": "https://github.com/pgilad/unquoted-property-validator/issues",
