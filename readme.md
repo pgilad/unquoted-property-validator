@@ -81,5 +81,5 @@ Type: `String`
 Property to validate
 
 ## License
-Copyright © 2014 Gilad Peleg.
-Licensed under the MIT license.
+
+MIT @[Gilad Peleg](http://giladpeleg.com)
