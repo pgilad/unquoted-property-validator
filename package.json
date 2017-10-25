@@ -10,6 +10,7 @@
     "url": "http://giladpeleg.com"
   },
   "main": "index.js",
+  "typings": "./index.d.ts",
   "files": [
     "index.js",
     "lib"
