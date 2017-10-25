@@ -32,6 +32,12 @@ console.log(results);
 */
 ```
 
+In ES6/Typescript the first line should look like this instead:
+
+```js
+import unquotedValidator = require('unquoted-property-validator');
+```
+
 ## Results
 
 Your property input will be checked and you will get 3 flags as output:
